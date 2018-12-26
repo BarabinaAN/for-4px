@@ -60,10 +60,6 @@
  });
 
 
-
-
-
-
  gulp.task('style:build', function (cb) {
      pump([
          gulp.src(path.src.style),
