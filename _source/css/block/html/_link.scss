@@ -1,0 +1,52 @@
+.menu-nav a {
+	display: block;
+	width: 100%/9;
+	height: 100px;
+	padding-right: 28px;
+	padding-left: 28px;		
+	padding-top: 44px;
+	color: $color-dark;
+	font-size: $font-sz-md;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+	transition: all .75s;
+	&:hover {
+		color: $color-light;
+		background-color: $color-active;
+	}
+}
+
+.src {
+	vertical-align: middle;
+	font-size: $font-sz-sm;
+	font-weight: 400;
+	text-decoration: none;
+	transition: all .5s;
+	&:hover {
+		color: $color-hover;
+		border-bottom: none;
+	}
+}
+
+.src_color {
+	&_active {
+		font-family: $font-style-toyota_d;
+		color: $color-active;
+		border-bottom: 1px solid $color-active;		
+	}
+	&_dark {
+		font-family: $font-style-toyota_t;
+		color: $color-dark;	
+		border-bottom: 1px dotted $color-active;
+	}
+}
+
+.requisition__more {
+	.src {
+		font-weight: 700;
+		line-height: 32px;
+		border-bottom: none;
+	}
+}

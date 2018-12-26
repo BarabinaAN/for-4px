@@ -1,0 +1,156 @@
+.navbar {
+	width: 100%;
+	height: 100px;
+	background-color: $color-light;
+	box-shadow: 0 0 20px rgba($color-dark, .1);
+	transition: all .75s;
+}
+
+.menu-nav {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0;		
+	padding-left: 0;
+}
+
+.menu-burger {
+	position: relative;
+	top: 30px;	
+	z-index: 1;
+	display: none;
+	width: 50px;
+	height: 50px;	
+	margin-left: auto;
+	transition: all 1s;	
+	&:hover {
+		cursor: pointer;
+		background-color: $color-active;
+		.burger, .burger::before, .burger::after{
+			background-color: $color-light;
+		}
+		.burger_close {
+			background-color: transparent;
+		}
+	}	
+}
+
+.main {
+	max-height: 707px;
+	&__content {
+		padding-top: 73px;
+		padding-left: 30px;
+		padding-bottom: 40px;
+	}	
+	&__profit {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__action {
+		padding-top: 15px;
+	}
+	&__offer {
+		padding-top: 89px;
+		position: relative;
+		width: 335px;
+		margin-left: auto;
+	}
+	&__img {
+		padding-top: 87px;
+	}
+}
+
+.service {
+	background: $color-dark;
+	&__content {
+		position: relative;
+		height: 100%;
+		padding-top: 5px;
+		padding-left: 22px;
+		padding-right: 30px;
+		padding-bottom: 10px;
+		color: $color-light;
+		border-left: 2px solid rgba($color-light, .25);
+		transition: all .75s;		
+	}
+	.row:last-child {
+		border-right: 2px solid rgba($color-light, .25);
+	}
+
+	&__content:hover {
+		cursor: pointer;
+		background: $color-active;
+		border-color: transparent;
+		border-left: 2px solid rgba($color-light, 0);
+		p {
+			color: $color-light;
+		}
+	}
+	&__header {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.assortment {
+	padding-top: 30px;
+	padding-bottom: 69px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 34px;
+	}
+	&__card {
+		width: 720px;
+		height: 250px;
+	}
+	&__more {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 19px;
+	padding-left: 23px;
+	background-color: #f0f0f0;
+	&__offer {
+		padding-right: 23px;
+	}
+}
+
+.more {
+	width: 150px;
+	margin-top: 39px;
+}
+
+.offer {
+	padding-bottom: 70px;
+	background-color: #f0f0f0;
+}
+
+.contact {
+	padding-top: 35px;
+}
+
+.map {
+	height: 400px;
+}
+
+.requisition {
+	background-color: #f0f0f0;
+	padding: 40px 0;
+}
+
+.requisition__content {	
+	margin-top: 54px;
+}
+
+.footer {
+	height: 80px;	
+	padding-top: 5px;
+	background-color: #dadada;
+}

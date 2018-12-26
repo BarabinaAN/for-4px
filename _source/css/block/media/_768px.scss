@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+	.menu-burger {
+	 	top: 10px;
+	}
+
+	.navbar {
+		height: 70px;
+	}
+
+	.offer__form {
+		width: auto;
+	}
+
+	.main__content {
+		padding-bottom: 33px;
+	}
+
+	.main__profit {
+		span {
+			font-size: 34px - 4px;
+		}
+		p {
+			margin-top: 26px;
+		}
+	}
+
+	.main__action {
+		padding-top: 0;
+	}
+
+	.service__content {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

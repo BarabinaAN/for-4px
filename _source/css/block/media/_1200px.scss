@@ -1,0 +1,71 @@
+@media (max-width: 1229px) {
+  .menu-nav a {
+  	padding-right: 18px;
+  	padding-left: 18px;	
+  	font-size: $font-sz-sm;
+  }
+
+  .main {
+  	&__img {
+  		padding-top: 147px;
+  	}
+  	&__img img {
+  		width: 580px;
+  	}
+  }
+  
+  .main__content {
+    padding-left: 20px
+  }
+  
+  .main__profit {
+  	p {
+  		margin-top: 36px;
+  	}
+  }
+
+  .service__content {
+		padding-left: 15px;
+		padding-right: 15px;
+  }
+
+  .service__header {
+  	p {
+  		font-size: 40px;
+  	}
+  	h3 {
+  		font-size: $font-sz-sm;
+  	}
+  }
+
+	.assortment {
+		padding-bottom: 89px;
+		&__card{
+			width: 530px
+		}
+	}
+
+	.card__equip{
+		p {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+  .main {
+    &::after {
+      top: 43px;
+      width: 50%;
+      background-position: 0;
+    }
+    &__img {
+      padding-top: 167px;
+      transform: translateX(-100px);
+    }
+    &__img img {
+      width: 480px;
+    }
+  }
+  
+}

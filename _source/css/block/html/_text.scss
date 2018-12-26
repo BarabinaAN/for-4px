@@ -1,0 +1,115 @@
+.main__profit {
+	span {
+		display: block;
+		margin-top: 16px;
+		font-size: 34px;
+	}
+	p {
+		position: relative;
+		min-width: 220px;
+		margin-top: 46px;
+		font-family: $font-style-toyota_d;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 9px;
+		text-transform: uppercase;
+	}
+}
+
+.main__action {
+	p:last-child {
+		max-width: 250px;
+		text-align: right;
+	}	
+}
+
+.main__offer {
+	p {
+		padding-left: 50px;
+		color: $color-light;
+		font-size: $font-sz-md;
+		font-weight: 700;
+		line-height: 24px;
+	}
+}
+
+.service__content > p {
+	margin-top: 0;
+	font-size: $font-sz-xs;
+	color: $color-light;
+	line-height: 18px;	
+}
+
+.card__equip {
+	h3 {
+		margin-top: 0;
+		color: $color-dark;
+		font-size: $font-sz-lg;
+		line-height: 24px;
+	}
+	p {
+		margin-top: 0;
+		font-size: $font-sz-md;
+		line-height: 18px;
+	}
+}
+
+.card__offer {
+	p {
+		line-height: 18px;
+	}
+	span {
+		padding-right: 5px;
+	}
+	p:nth-child(1), p:nth-child(2) {
+		font-family: $font-style-toyota_d;
+		color: $color-active;
+		font-size: $font-sz-lg;
+		font-weight: 700;
+		span {
+			font-family: $font-style-toyota_t;
+			font-size: $font-sz-xs;
+			color: $color-dark;
+			text-decoration: uppercase;
+		}
+	}
+	p:nth-child(3) {
+		font-size: $font-sz-md;
+		font-weight: 700;
+		span {
+			font-family: $font-style-toyota_d;
+			font-size: $font-sz-sm;
+			opacity: .6;
+			font-weight: 400;
+		}		
+	}
+}
+
+.subhead {
+	position: relative;
+	color: $color-dark;
+	font-size: $font-sz-xl;
+	font-weight: 700;
+	line-height: 85.99px;
+	text-align: center;
+}
+
+
+.requisition__content {
+	p {
+		color: rgba($color-dark, 0.5);
+		font-size: $font-sz-xs;
+		line-height: 22px;
+	}
+}
+
+.footer {
+	p {
+		color: rgba($color-dark, 0.5);
+		font-size: $font-sz-xs;
+		line-height: 32px;
+	}
+}
+
+
+

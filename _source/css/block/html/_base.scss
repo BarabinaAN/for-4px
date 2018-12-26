@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	&:focus {
+		user-select: none;
+		outline: 0;
+	}
+}
+
+a {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, a, input, button {
+	font-family: $font-style-toyota_d;
+}
+
+p {
+	font-family: $font-style-toyota_t;
+	font-weight: 400;
+	color: $color-dark;
+}
+
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1230px;
+	}
+}
