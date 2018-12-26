@@ -1,28 +1,28 @@
 .main__header {
 	h1 {
 		padding-top: 20px;
-		color: $color-light;
-		font-size: $font-sz-xl;
+		color: map-get($color, light);
+		font-size: map-get($font_sz, xl);
 		line-height: 24px;
 	}
 	p {
-		font-size: $font-sz-lg;
+		font-size: map-get($font_sz, lg);
 		line-height: 24px;
 	}	
 }
 
 .service__header {
 	p {
-		font-family: $font-style-toyota_d;
+		font-family: map-get($font_style, toyota_d);
 		font-weight: 700;
 		margin: 0;
 		font-size: 50px;
-		color: rgba($color-light, .25);
+		color: rgba(map-get($color, light), .25);
 		line-height: 24px;	
 	}
 	h3 {
 		padding-left: 10px;
-		font-size: $font-sz-md;
+		font-size: map-get($font_sz, md);
 		text-transform: uppercase;
 	}
 }
@@ -30,7 +30,7 @@
 .offer__header {
 	p {
 		margin-top: -15px;
-		font-size: $font-sz-lg;
+		font-size: map-get($font_sz, lg);
 		line-height: 24px;
 		text-align: center;
 	}	

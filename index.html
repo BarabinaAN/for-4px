@@ -11,7 +11,6 @@
 		<link rel="manifest" href="/_assets/favicon/site.webmanifest">
 		<link rel="mask-icon" href="/_assets/favicon/safari-pinned-tab.svg" color="#552fcb">
 		<link rel="shortcut icon" href="/_assets/favicon/favicon.ico">
-
 		<meta name="msapplication-TileColor" content="#603cba">
 		<meta name="msapplication-TileImage" content="/_assets/favicon/mstile-150x150.png">
 		<meta name="msapplication-config" content="/_assets/favicon/browserconfig.xml">
@@ -19,13 +18,7 @@
 
 		<title>Fortuner</title>
 
-		<link href="_assets/css/normalize.css" rel="stylesheet">
-		<link href="_assets/css/bootstrap-grid.min.css" rel="stylesheet">
-		<link href="_assets/css/animate.css" rel="stylesheet">		
 		<link href="_assets/css/style.css" rel="stylesheet">
-		<link href="_assets/css/font.css" rel="stylesheet">
-
-
 		<script> window.jQuery || document.write('<script src="_assets/module/jquery.min.js"><\/script>')</script>
 	</head>
 
@@ -71,11 +64,15 @@
 							
 							<div class="main__action">
 								<p>
-									<img src="_assets/img/style/main-icon.png" alt="" class="icon">
-									<a href="#" class="src src_color_active">Записаться на&nbsp;Тест-драйв</a>
+									<a href="#" class="icon-link">
+										<svg viewBox="0 0 24 24" class="icon icon_testdrive">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="_assets/svg/sprite.svg#drive-icon"></use>
+										</svg>
+										<span>Записаться на&nbsp;Тест-драйв</span>
+									</a>
 								</p>	
 								<button class="button">Получить предложение</button>		
-								<p><a href="#" class="src src_color_dark">Нашли дешевле?</a></p>	
+								<p><a href="#" class="link">Нашли дешевле?</a></p>	
 							</div>
 						</article>						
 					</div>
@@ -180,9 +177,39 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="invisible-block">
+							<div class="assortment__content">
+								<img src="_assets/img/style/fortuner-sm.png" alt="fortuner-sm">
+								<div class="card assortment__card">
+									<div class="card__equip">
+										<header>
+											<h3>Fortuner</h3>
+										</header>
+										<p>Год выпуска: 2016</p>
+										<p>Двигатель: 1,6 МТ (110 л.с.)</p>
+										<p>КПП: Механическая</p>
+										<p>Привод: Передний привод</p>
+										<p>Цвет: Серый металлик</p>
+									</div>
+									<div class="card__offer">
+										<p><span>выгода до</span> 100500 ₽</p>
+										<p><span>в кредит от</span> 5000 ₽/мес</p>
+										<p><span>Подробнее:</span> +7 (351)211-10-10</p>
+										<button class="button">Узнать цену</button>
+									</div>
+								</div>
+							</div>							
+						</div>
+
+
 						<div class="more assortment__more">
-							<a href="#" class="src src_color_active">Смотреть еще</a>
-							<img src="_assets/img/style/down-arrow-color.png" alt="" class="icon">	
+							<a href="#" class="icon-link assortment__icon-link js-link_show">
+								<span>Смотреть еще</span>
+								<svg viewBox="0 0 24 24" class="icon icon_arrow">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="_assets/svg/sprite.svg#down-arrow"></use>
+								</svg>	
+							</a>			
 						</div>	
 					</div>
 				</div>
@@ -210,7 +237,7 @@
 
 		<section class="contact">
 			<h2 class="subhead">Контакты</h2>
-			<div class="map">
+			<div class="map" id="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.4143184024647!2d61.37477892998148!3d55.22848577647651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5ec9c1e6ea12b%3A0x22b4ab18633f0667!2zVG95b3RhINCm0LXQvdGC0YAg0KfQtdC70Y_QsdC40L3RgdC6INCh0LXQstC10YA!5e0!3m2!1sru!2sru!4v1545747814707" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>			
 			</div>
 		</section>
@@ -221,20 +248,26 @@
 					<div class="col-lg-12">
 						<a href="#nav"><div class="top"></div></a>
 						<article class="requisition__content">
-							<div class="more requisition__more">
-								<a href="#" class="src src_color_active">Условия акции</a>
-								<img src="_assets/img/style/down-arrow-color.png" alt="" class="icon">
+							<div class="more">
+								<a href="#" class="icon-link icon-link_active js-link_show">
+									<span>Условия акции</span>
+									<svg viewBox="0 0 24 24" class="icon icon_arrow">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="_assets/svg/sprite.svg#down-arrow"></use>
+									</svg>	
+								</a>
 							</div>	
+							<div class="invisible-block" style="display: block">
+								<p>
+									*Предложение действует до&nbsp;31.03.18г.
+								</p>
+								<p>
+									Выгода достигается посредством предоставления скидки от&nbsp;максимальной цены перепродажи автомобиля при передаче автомобиля с&nbsp;пробегом в&nbsp;счет стоимости нового автомобиля, а&nbsp;также скидки при приобретении автомобиля по&nbsp;всем кредитным программам от&nbsp;АО&nbsp;&laquo;Тойота Банк&raquo;, а&nbsp;так&nbsp;же одновременном страховании по&nbsp;договору КАСКО в&nbsp;рамках программы Тойота Страхование, организатором которой является ООО &laquo;Тойота Иншуранс Менеджмент (Страховые брокеры)&raquo; (Лицензия ЦБ&nbsp;РФ&nbsp;СБ&#8470;&nbsp;4339) и&nbsp;скидки дилера зависящей от&nbsp;комплектации выбранной модели, подарками дополнительным оборудованием, или специальной ценой. Подробнее в&nbsp;дилерском центре по&nbsp;тел. &mdash;&nbsp;+7(351)2111010&Prime;
+								</p>
+								<p>
+									** Кредит&nbsp;5,5%: Ставка указана по&nbsp;кредитной программе &laquo;Выгодный (новые автомобили) 02_18&raquo; при первоначальном взносе (ПВ) от&nbsp;70% и&nbsp;сроке кредита (СК) 12&nbsp;мес. Условия кредитования: годовая процентная ставка при&nbsp;ПВ от&nbsp;70% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;7,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,5% годовых; при&nbsp;ПВ от&nbsp;40&nbsp;до&nbsp;69,9% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;8,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,9% годовых. Валюта кредита&nbsp;&mdash; рубли РФ. Минимальная сумма кредита&nbsp;&mdash; 300&nbsp;000&nbsp;руб. Погашение аннуитетными (равными по&nbsp;сумме ежемесячными) платежами. Обязательная передача приобретаемого с&nbsp;использованием кредита а/м в&nbsp;залог и&nbsp;страхование по&nbsp;программе КАСКО. Кредитование осуществляется АО&nbsp;&laquo;Тойота Банк&raquo; в&nbsp;регионах присутствия АО&nbsp;&laquo;Тойота Банк&raquo;. Лицензии Банка России &#8470;&nbsp;3470. Подробнее на&nbsp;сайте www.toyota-bank.ru или по&nbsp;тел.&nbsp;8&nbsp;800&nbsp;200 08 40. Предложение действует с&nbsp;01.02.2018.
+								</p>								
+							</div>
 
-							<p>
-								*Предложение действует до&nbsp;31.03.18г.
-							</p>
-							<p>
-								Выгода достигается посредством предоставления скидки от&nbsp;максимальной цены перепродажи автомобиля при передаче автомобиля с&nbsp;пробегом в&nbsp;счет стоимости нового автомобиля, а&nbsp;также скидки при приобретении автомобиля по&nbsp;всем кредитным программам от&nbsp;АО&nbsp;&laquo;Тойота Банк&raquo;, а&nbsp;так&nbsp;же одновременном страховании по&nbsp;договору КАСКО в&nbsp;рамках программы Тойота Страхование, организатором которой является ООО &laquo;Тойота Иншуранс Менеджмент (Страховые брокеры)&raquo; (Лицензия ЦБ&nbsp;РФ&nbsp;СБ&#8470;&nbsp;4339) и&nbsp;скидки дилера зависящей от&nbsp;комплектации выбранной модели, подарками дополнительным оборудованием, или специальной ценой. Подробнее в&nbsp;дилерском центре по&nbsp;тел. &mdash;&nbsp;+7(351)2111010&Prime;
-							</p>
-							<p>
-								** Кредит&nbsp;5,5%: Ставка указана по&nbsp;кредитной программе &laquo;Выгодный (новые автомобили) 02_18&raquo; при первоначальном взносе (ПВ) от&nbsp;70% и&nbsp;сроке кредита (СК) 12&nbsp;мес. Условия кредитования: годовая процентная ставка при&nbsp;ПВ от&nbsp;70% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;7,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,5% годовых; при&nbsp;ПВ от&nbsp;40&nbsp;до&nbsp;69,9% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;8,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,9% годовых. Валюта кредита&nbsp;&mdash; рубли РФ. Минимальная сумма кредита&nbsp;&mdash; 300&nbsp;000&nbsp;руб. Погашение аннуитетными (равными по&nbsp;сумме ежемесячными) платежами. Обязательная передача приобретаемого с&nbsp;использованием кредита а/м в&nbsp;залог и&nbsp;страхование по&nbsp;программе КАСКО. Кредитование осуществляется АО&nbsp;&laquo;Тойота Банк&raquo; в&nbsp;регионах присутствия АО&nbsp;&laquo;Тойота Банк&raquo;. Лицензии Банка России &#8470;&nbsp;3470. Подробнее на&nbsp;сайте www.toyota-bank.ru или по&nbsp;тел.&nbsp;8&nbsp;800&nbsp;200 08 40. Предложение действует с&nbsp;01.02.2018.
-							</p>
 						</article>
 					</div>
 				</div>
@@ -247,26 +280,7 @@
 			</div>
 		</footer>
 
-	
-
 		<script src="_assets/module/jquery.maskedinput.js"></script>
-		<script>
-			jQuery(function($){
-						$(".input_phone").mask("+7 (999) 999-9999");
-			});
-		</script>
-<!--  Старый код -->		
-
-		<script>
-			// скрипт меню
-			$(document).ready(function(){
-				
-					$('.menu-burger').on("click", function(){
-							$('.navbar').toggleClass('.navbar_active');
-							$('.burger').toggleClass('burger_close');
-							$('.menu-nav').toggleClass('menu-nav_active');
-					});
-			});
-		</script>
+		<script src="_assets/js/bundle.min.js"></script>
 	</body>
 </html>

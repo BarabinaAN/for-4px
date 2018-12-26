@@ -8,7 +8,7 @@
 		position: relative;
 		min-width: 220px;
 		margin-top: 46px;
-		font-family: $font-style-toyota_d;
+		font-family: map-get($font_style, toyota_d);
 		font-size: 12px;
 		font-weight: 700;
 		line-height: 9px;
@@ -26,8 +26,8 @@
 .main__offer {
 	p {
 		padding-left: 50px;
-		color: $color-light;
-		font-size: $font-sz-md;
+		color: map-get($color, light);
+		font-size: map-get($font_sz, md);
 		font-weight: 700;
 		line-height: 24px;
 	}
@@ -35,21 +35,21 @@
 
 .service__content > p {
 	margin-top: 0;
-	font-size: $font-sz-xs;
-	color: $color-light;
+	font-size: map-get($font_sz, xs);
+	color: map-get($color, light);
 	line-height: 18px;	
 }
 
 .card__equip {
 	h3 {
 		margin-top: 0;
-		color: $color-dark;
-		font-size: $font-sz-lg;
+		color: map-get($color, dark);
+		font-size: map-get($font_sz, lg);
 		line-height: 24px;
 	}
 	p {
 		margin-top: 0;
-		font-size: $font-sz-md;
+		font-size: map-get($font_sz, md);
 		line-height: 18px;
 	}
 }
@@ -62,23 +62,23 @@
 		padding-right: 5px;
 	}
 	p:nth-child(1), p:nth-child(2) {
-		font-family: $font-style-toyota_d;
-		color: $color-active;
-		font-size: $font-sz-lg;
+		font-family: map-get($font_style, toyota_d);
+		color: map-get($color, active);
+		font-size: map-get($font_sz, lg);
 		font-weight: 700;
 		span {
-			font-family: $font-style-toyota_t;
-			font-size: $font-sz-xs;
-			color: $color-dark;
+			font-family: map-get($font_style, toyota_t);
+			font-size: map-get($font_sz, xs);
+			color: map-get($color, dark);
 			text-decoration: uppercase;
 		}
 	}
 	p:nth-child(3) {
-		font-size: $font-sz-md;
+		font-size: map-get($font_sz, md);
 		font-weight: 700;
 		span {
-			font-family: $font-style-toyota_d;
-			font-size: $font-sz-sm;
+			font-family: map-get($font_style, toyota_d);
+			font-size: map-get($font_sz, sm);
 			opacity: .6;
 			font-weight: 400;
 		}		
@@ -87,29 +87,29 @@
 
 .subhead {
 	position: relative;
-	color: $color-dark;
-	font-size: $font-sz-xl;
+	color: map-get($color, dark);
+	font-size: map-get($font_sz, xl);
 	font-weight: 700;
 	line-height: 85.99px;
 	text-align: center;
 }
 
-
 .requisition__content {
 	p {
-		color: rgba($color-dark, 0.5);
-		font-size: $font-sz-xs;
+		color: rgba(map-get($color, dark), 0.5);
+		font-size: map-get($font_sz, xs);
 		line-height: 22px;
 	}
 }
 
 .footer {
 	p {
-		color: rgba($color-dark, 0.5);
-		font-size: $font-sz-xs;
+		color: rgba(map-get($color, dark), 0.5);
+		font-size: map-get($font_sz, xs);
 		line-height: 32px;
 	}
 }
 
-
-
+.invisible-block {
+	display: none;
+}

@@ -1,3 +1,8 @@
+@import url(block/system/normalize.css);
+@import url(block/system/bootstrap-grid.min.css);
+@import url(../font/ToyotaDisplay/toyotadisplay.css);
+@import url(../font/ToyotaText/toyotatext.css);
+@import url(../font/PTSans/ptsans.css);
 * {
   box-sizing: border-box; }
   *:focus {
@@ -11,10 +16,10 @@ a {
   cursor: pointer; }
 
 h1, h2, h3, h4, a, input, button {
-  font-family: "ToyotaDisplay", sans-serif; }
+  font-family: "ToyotaDisplay" sans-serif; }
 
 p {
-  font-family: "ToyotaText", sans-serif;
+  font-family: "ToyotaText" sans-serif;
   font-weight: 400;
   color: #333; }
 
@@ -169,7 +174,7 @@ p {
   line-height: 24px; }
 
 .service__header p {
-  font-family: "ToyotaDisplay", sans-serif;
+  font-family: "ToyotaDisplay" sans-serif;
   font-weight: 700;
   margin: 0;
   font-size: 50px;
@@ -196,7 +201,7 @@ p {
   position: relative;
   min-width: 220px;
   margin-top: 46px;
-  font-family: "ToyotaDisplay", sans-serif;
+  font-family: "ToyotaDisplay" sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 9px;
@@ -237,12 +242,12 @@ p {
   padding-right: 5px; }
 
 .card__offer p:nth-child(1), .card__offer p:nth-child(2) {
-  font-family: "ToyotaDisplay", sans-serif;
+  font-family: "ToyotaDisplay" sans-serif;
   color: #e50000;
   font-size: 24px;
   font-weight: 700; }
   .card__offer p:nth-child(1) span, .card__offer p:nth-child(2) span {
-    font-family: "ToyotaText", sans-serif;
+    font-family: "ToyotaText" sans-serif;
     font-size: 14px;
     color: #333;
     text-decoration: uppercase; }
@@ -251,7 +256,7 @@ p {
   font-size: 18px;
   font-weight: 700; }
   .card__offer p:nth-child(3) span {
-    font-family: "ToyotaDisplay", sans-serif;
+    font-family: "ToyotaDisplay" sans-serif;
     font-size: 16px;
     opacity: .6;
     font-weight: 400; }
@@ -273,6 +278,9 @@ p {
   color: rgba(51, 51, 51, 0.5);
   font-size: 14px;
   line-height: 32px; }
+
+.invisible-block {
+  display: none; }
 
 .burger {
   position: absolute;
@@ -388,10 +396,14 @@ p {
 
 .icon {
   vertical-align: middle; }
+  .icon > use {
+    fill: currentColor; }
 
-.more .icon {
-  padding-left: 5px;
-  vertical-align: sub; }
+.icon_testdrive {
+  width: 24px; }
+
+.icon_arrow {
+  width: 19px; }
 
 .subhead::before {
   content: '';
@@ -405,15 +417,6 @@ p {
   background: rgba(229, 0, 0, 0.5);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
-
-.requisition__more .icon {
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
-
-.requisition__more .icon_active {
-  padding-right: 5px;
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
 
 .top {
   position: relative;
@@ -463,25 +466,37 @@ p {
     color: #fff;
     background-color: #e50000; }
 
-.src {
+.link, .icon-link {
   vertical-align: middle;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
   transition: all .5s; }
-  .src:hover {
-    color: #ce0000;
-    border-bottom: none; }
+  .link:hover, .icon-link:hover {
+    color: #ce0000; }
 
-.src_color_active {
-  font-family: "ToyotaDisplay", sans-serif;
-  color: #e50000;
-  border-bottom: 1px solid #e50000; }
-
-.src_color_dark {
-  font-family: "ToyotaText", sans-serif;
+.link {
+  font-family: "ToyotaText" sans-serif;
   color: #333;
   border-bottom: 1px dotted #e50000; }
+  .link:hover {
+    border-bottom: none; }
+
+.icon-link {
+  font-family: "ToyotaDisplay" sans-serif;
+  color: #e50000;
+  text-decoration: none; }
+  .icon-link span {
+    border-bottom: 1px solid #e50000; }
+  .icon-link span:hover {
+    border-bottom: none; }
+
+.more .icon-link_active span {
+  border-bottom: none; }
+
+.more .icon-link_active .icon_arrow {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .requisition__more .src {
   font-weight: 700;

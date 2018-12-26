@@ -5,41 +5,59 @@
 	padding-right: 28px;
 	padding-left: 28px;		
 	padding-top: 44px;
-	color: $color-dark;
-	font-size: $font-sz-md;
+	color: map-get($color, dark);
+	font-size: map-get($font_sz, md);
 	font-weight: 700;
 	line-height: 20px;
 	text-align: center;
 	text-decoration: none;
 	transition: all .75s;
 	&:hover {
-		color: $color-light;
-		background-color: $color-active;
+		color: map-get($color, light);
+		background-color: map-get($color, active);
 	}
 }
 
-.src {
+.link, .icon-link {
 	vertical-align: middle;
-	font-size: $font-sz-sm;
+	font-size: map-get($font_sz, sm);
 	font-weight: 400;
 	text-decoration: none;
 	transition: all .5s;
 	&:hover {
-		color: $color-hover;
+		color: map-get($color, hover);
+	}
+}
+
+.link, {
+	font-family: map-get($font_style, toyota_t);
+	color: map-get($color, dark);
+	border-bottom: 1px dotted map-get($color, active);
+	&:hover {
 		border-bottom: none;
 	}
 }
 
-.src_color {
-	&_active {
-		font-family: $font-style-toyota_d;
-		color: $color-active;
-		border-bottom: 1px solid $color-active;		
+.icon-link {
+	font-family: map-get($font_style, toyota_d);	
+	color: map-get($color, active);
+	text-decoration: none;
+	span {
+		border-bottom: 1px solid map-get($color, active);
 	}
-	&_dark {
-		font-family: $font-style-toyota_t;
-		color: $color-dark;	
-		border-bottom: 1px dotted $color-active;
+	span:hover {
+		border-bottom: none;
+	}
+}
+
+.more {
+	.icon-link_active {
+		span {
+			border-bottom: none;
+		}
+		.icon_arrow {
+			transform: rotate(180deg);
+		}
 	}
 }
 

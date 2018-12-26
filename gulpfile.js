@@ -207,8 +207,8 @@
   bs.init({
     server: "./"
    });
-   gulp.watch('./_source/css/**/*.scss', ['sass']); // отслеживаем изменения всех SASS в папке scr
-   gulp.watch("./*.html").on('change', bs.reload); // отслеживаем изменения всех html файлов в папке scr, обновляем странизу
+   gulp.watch('./_source/css/**/*.scss', ['sass']); 
+   gulp.watch("./*.html").on('change', bs.reload); 
  });
 
  gulp.task('sass', function() {

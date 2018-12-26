@@ -2,7 +2,7 @@
   .menu-nav a {
   	padding-right: 18px;
   	padding-left: 18px;	
-  	font-size: $font-sz-sm;
+  	font-size: map-get($font_sz, sm);
   }
 
   .main {
@@ -34,7 +34,7 @@
   		font-size: 40px;
   	}
   	h3 {
-  		font-size: $font-sz-sm;
+  		font-size: map-get($font_sz, sm);
   	}
   }
 

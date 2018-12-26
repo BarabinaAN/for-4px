@@ -1,3 +1,7 @@
+@import 'block/system/normalize.css';
+@import 'block/system/bootstrap-grid.min.css';
+@import 'block/system/font.scss';
+
 @import 'block/system/_var.scss';
 
 @import 'block/html/_base.scss';
@@ -6,9 +10,6 @@
 @import 'block/html/_text.scss';
 @import 'block/html/_figure.scss';
 @import 'block/html/_link.scss';
-
-
-
 
 @import 'block/form/_form.scss';
 @import 'block/form/_button.scss';

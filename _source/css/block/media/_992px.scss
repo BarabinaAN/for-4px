@@ -23,8 +23,8 @@
 	.menu-nav_active a {
 		height: auto;
 		padding: 30px 0;
-		background-color: $color-light;
-		box-shadow: 0 0 20px rgba($color-dark, .1);
+		background-color: map-get($color, light);
+		box-shadow: 0 0 20px rgba(map-get($color, dark), .1);
 	}	
 
 	.menu-burger {
@@ -45,10 +45,10 @@
 
 	.main__header {
 		h1 {
-			font-size: $font-sz-xl - 2px;
+			font-size: map-get($font_sz, xl) - 2px;
 		}
 		p {
-			font-size: $font-sz-lg - 2px;
+			font-size: map-get($font_sz, lg) - 2px;
 		}	
 	}
 
@@ -80,13 +80,13 @@
 	}
 
 	.subhead {
-		font-size: $font-sz-xl - 2px;
+		font-size: map-get($font_sz, xl) - 2px;
 		line-height: 75.99px;
 	}
 
 	.offer__header {
 		p {
-			font-size: $font-sz-lg - 2px;
+			font-size: map-get($font_sz, lg) - 2px;
 		}
 	} 
 

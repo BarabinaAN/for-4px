@@ -2,16 +2,16 @@
 	display: block;
 	width: 250px;
 	height: 50px;
-	color: $color-light;
-	font-size: $font-sz-sm;
+	color: map-get($color, light);
+	font-size: map-get($font_sz, sm);
 	font-weight: 400;
-	background-color: $color-active;	
+	background-color: map-get($color, active);
 	border: none;
 	border-radius: 30px;
 	transition: all .5s;
 	&:hover {
 		cursor: pointer;
-		background-color: $color-hover;
+		background-color: map-get($color, hover);
 	}
 }
 
