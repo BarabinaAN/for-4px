@@ -23,9 +23,6 @@
     "gulp-uglify": "^1.5.4",
     "gulp-watch": "^4.3.11",
     "pump": "^2.0.0",
-    "dependencies": {
-      "gulp": "^4.0.0"
-    }
   },
   "dependencies": {
     "gulp-htmlmin": "^4.0.0",
