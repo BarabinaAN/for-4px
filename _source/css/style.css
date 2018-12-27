@@ -399,6 +399,8 @@ p {
   vertical-align: middle; }
   .icon > use {
     fill: currentColor; }
+  .icon path {
+    fill: currentColor; }
 
 .icon_testdrive {
   width: 24px;
