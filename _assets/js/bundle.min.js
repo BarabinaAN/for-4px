@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function(event){
 	
-	$('.js-link_show').on("click", function(){
+	$('.js-link_show').on("click", function(event){
 		event.preventDefault();
 		var parent = $(this).parents();
 
