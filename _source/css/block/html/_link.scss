@@ -25,6 +25,7 @@
 	text-decoration: none;
 	transition: all .5s;
 	&:hover {
+		cursor: pointer;
 		color: map-get($color, hover);
 	}
 }

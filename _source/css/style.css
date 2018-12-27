@@ -395,15 +395,18 @@ p {
   background: rgba(51, 51, 51, 0.5); }
 
 .icon {
+  display: inline-block;
   vertical-align: middle; }
   .icon > use {
     fill: currentColor; }
 
 .icon_testdrive {
-  width: 24px; }
+  width: 24px;
+  height: 24px; }
 
 .icon_arrow {
-  width: 19px; }
+  width: 19px;
+  height: 19px; }
 
 .subhead::before {
   content: '';
@@ -439,7 +442,7 @@ p {
     display: block;
     width: 20px;
     height: 11px;
-    background-image: url(../img/style/top-arrow-w.png);
+    background-image: url(../img/style/top-arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -473,6 +476,7 @@ p {
   text-decoration: none;
   transition: all .5s; }
   .link:hover, .icon-link:hover {
+    cursor: pointer;
     color: #ce0000; }
 
 .link {

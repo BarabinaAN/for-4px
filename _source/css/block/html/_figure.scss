@@ -125,6 +125,7 @@
 }
 
 .icon {
+	display: inline-block;
 	vertical-align: middle;
 	> use {
 	  fill: currentColor;
@@ -133,10 +134,12 @@
 
 .icon_testdrive {
   width: 24px;
+  height: 24px;
 }
 
 .icon_arrow {
   width: 19px;
+  height: 19px;
 }
 
 .subhead {
@@ -174,7 +177,7 @@
 		display: block;
 		width: 20px;
 		height: 11px;
-		background-image: url(../img/style/top-arrow-w.png);
+		background-image: url(../img/style/top-arrow.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
